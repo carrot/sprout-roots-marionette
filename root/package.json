@@ -1,0 +1,26 @@
+{
+  "name": "<%= name %>",
+  "version": "0.0.0",
+  "description": "<%= description %>",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<%= github_username %>/<%= name %>"
+  },
+  "author": "<%= github_username %>",
+  "bugs": {
+    "url": "https://github.com/<%= github_username %>/<%= name%>/issues"
+  },
+  "homepage": "https://github.com/<%= github_username %>/<%= name %>",
+  "dependencies": {
+    "roots": "3.x",
+    "client-templates": "0.0.2",
+    "jade": "1.x.x",
+    "marked": "0.3.x",
+    "stylus": "0.42.x",
+    "coffee-script": "1.x.x",
+    "autoprefixer-stylus": "0.0.x",
+    "axis-css": "0.2.x",
+    "rupture": "0.0.x"
+  }
+}
