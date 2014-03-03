@@ -5,7 +5,7 @@ A template for roots v3 configured with marionette
 ### Installation
 
 - `npm install sprout -g`
-- `sprout add node https://github.com/carrot/sprout-sprout-roots-marionette.git`
+- `sprout add node https://github.com/carrot/sprout-roots-marionette.git`
 
 ### Options
 
