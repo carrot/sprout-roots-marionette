@@ -4,7 +4,7 @@ rupture      = require 'rupture'
 precompile   = require 'client-templates'
 
 module.exports =
-  ignores: ['readme.md', '**/layout.*', '**/_*', '.gitignore']
+  ignores: ['readme.md', '**/layout.*', '**/_*', '.gitignore', '.editorconfig']
 
   extensions: [precompile(base: 'assets/js/templates/')]
 
