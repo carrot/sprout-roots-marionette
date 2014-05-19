@@ -9,7 +9,7 @@ require.config
     jquery: "#{cloudflare}/jquery/2.0.3/jquery.min"
     underscore: "#{cloudflare}/underscore.js/1.6.0/underscore-min"
     backbone: "#{cloudflare}/backbone.js/1.1.2/backbone-min"
-    marionette: "#{cloudflare}/backbone.marionette/1.5.1-bundled/backbone.marionette.min"
+    marionette: "#{cloudflare}/backbone.marionette/1.8.0/backbone.marionette.min"
     app: 'application'
 
 require ['app', 'router', 'controller'], (App, Router, Controller) ->
