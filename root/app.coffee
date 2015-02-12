@@ -16,3 +16,6 @@ module.exports =
 
   stylus:
     use: [axis(), autoprefixer(), rupture()]
+
+  server:
+    spa: true
