@@ -13,14 +13,18 @@
   },
   "homepage": "https://github.com/<%= github_username %>/<%= name %>",
   "dependencies": {
-    "roots": "3.x",
-    "client-templates": "0.0.2",
-    "jade": "1.x.x",
+    "autoprefixer-stylus": "0.5.x",
+    "axis": "0.2.x",
+    "backbone": "1.x",
+    "backbone.marionette": "2.x",
+    "client-templates": "0.2.x",
+    "coffee-script": "1.9.x",
+    "css-pipeline": "0.2.x",
+    "jade": "1.x",
+    "jquery": "2.x",
     "marked": "0.3.x",
-    "stylus": "0.42.x",
-    "coffee-script": "1.x.x",
-    "autoprefixer-stylus": "0.0.x",
-    "axis-css": "0.2.x",
-    "rupture": "0.0.x"
+    "roots-browserify": "0.3.x",
+    "rupture": "0.6.x",
+    "stylus": "0.50.x"
   }
 }

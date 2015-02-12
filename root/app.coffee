@@ -1,12 +1,18 @@
-axis         = require 'axis-css'
+axis         = require 'axis'
 autoprefixer = require 'autoprefixer-stylus'
 rupture      = require 'rupture'
-precompile   = require 'client-templates'
+templates    = require 'client-templates'
+browserify   = require 'roots-browserify'
+css_pipeline = require 'css-pipeline'
 
 module.exports =
   ignores: ['readme.md', '**/layout.*', '**/_*', '.gitignore']
 
-  extensions: [precompile(base: 'assets/js/templates/')]
+  extensions: [
+    browserify(files: 'assets/js/main.coffee', out: '/js/build.js'),
+    css_pipeline(files: 'assets/css/*.styl'),
+    templates(base: 'assets/js/templates/')
+  ]
 
   stylus:
     use: [axis(), autoprefixer(), rupture()]

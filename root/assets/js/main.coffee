@@ -1,22 +1,15 @@
-cloudflare = '//cdnjs.cloudflare.com/ajax/libs'
+$            = require 'jquery'
+Backbone     = require 'backbone'
+Backbone.$   = $
+Marionette   = require 'backbone.marionette'
+Marionette.$ = $
+Router       = require './router.coffee'
+Controller   = require './controller.coffee'
+App          = require './application.coffee'
 
-require.config
-  shim:
-    underscore: { exports: '_' }
-    backbone: { deps: ['jquery', 'underscore'], exports: 'Backbone' }
-    marionette: { deps: ['backbone'], exports: 'Marionette' }
-  paths:
-    jquery: "#{cloudflare}/jquery/2.0.3/jquery.min"
-    underscore: "#{cloudflare}/underscore.js/1.6.0/underscore-min"
-    backbone: "#{cloudflare}/backbone.js/1.1.2/backbone-min"
-    marionette: "#{cloudflare}/backbone.marionette/1.5.1-bundled/backbone.marionette.min"
-    app: 'application'
+App.on 'start', ->
+  router = new Router(controller: new Controller)
+  App.reqres.setHandler('router', -> router)
+  Backbone.history.start(pushState: true)
 
-require ['app', 'router', 'controller'], (App, Router, Controller) ->
-
-  App.on 'initialize:after', ->
-    router = new Router(controller: new Controller)
-    App.reqres.setHandler('router', -> router)
-    Backbone.history.start(pushState: true)
-
-  App.start()
+App.start()

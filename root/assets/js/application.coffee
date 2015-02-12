@@ -1,7 +1,5 @@
-define ['marionette'], (Marionette) ->
-  App = new Marionette.Application()
+Marionette = require 'backbone.marionette'
 
-  App.addRegions
-    main: '#main'
-
-  return App
+App = new Marionette.Application()
+App.addRegions(main: '#main')
+module.exports = App

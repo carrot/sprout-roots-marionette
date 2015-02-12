@@ -1,6 +1,6 @@
-define ['marionette', 'templates'], (Marionette, templates) ->
+Marionette = require 'backbone.marionette'
 
-  console.log templates.example
+class Example extends Marionette.ItemView
+  template: templates.example
 
-  class Example extends Marionette.ItemView
-    template: templates.example
+module.exports = Example

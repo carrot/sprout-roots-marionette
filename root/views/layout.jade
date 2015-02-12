@@ -6,13 +6,11 @@ html
     meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
     meta(name='description', content='')
     meta(name='author', content='')
-
+    != css('/')
     title Roots Marionette App
-
-    link(rel='stylesheet', href='/css/master.css')
-
-    script(data-main="/js/main", src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.5/require.min.js")
 
   body
     block content
-    script
+      
+    != client_templates()
+    script(src='/js/build.js')
