@@ -6,6 +6,7 @@ A template for roots v3 configured with marionette
 
 - `npm install sprout -g`
 - `sprout add marionette https://github.com/carrot/sprout-roots-marionette.git`
+- `sprout new marionette myappname`
 
 ### Options
 
