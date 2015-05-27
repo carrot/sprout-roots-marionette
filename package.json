@@ -1,23 +1,31 @@
 {
   "name": "sprout-roots-marionette",
-  "version": "0.0.0",
   "description": "A roots template for a marionette/browserify project",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "version": "0.0.0",
+  "author": "Carrot Creative",
+  "bugs": {
+    "url": "https://github.com/carrot/sprout-roots-marionette/issues"
   },
+  "dependencies": {
+    "ejs": "2.2.x",
+    "underscore.string": "3.0.x"
+  },
+  "devDependencies": {
+    "mocha": "2.2.x",
+    "coffee-script": "1.9.x",
+    "chai": "2.3.x",
+    "chai-as-promised": "5.0.x",
+    "sprout": "0.4.x",
+    "rimraf": "2.3.x"
+  },
+  "homepage": "https://github.com/carrot/sprout-roots-marionette",
+  "license": "MIT",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/carrot/sprout-roots-marionette"
   },
-  "author": "Jeff Escalante",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/carrot/sprout-roots-marionette/issues"
-  },
-  "homepage": "https://github.com/carrot/sprout-roots-marionette",
-  "dependencies": {
-    "ejs": "^2.2.4",
-    "underscore.string": "^3.0.3"
+  "scripts": {
+    "test": "mocha"
   }
 }
