@@ -13,8 +13,8 @@
   },
   "homepage": "https://github.com/<%= github_username %>/<%= name %>",
   "dependencies": {
-    "autoprefixer-stylus": "0.5.x",
-    "axis": "0.2.x",
+    "autoprefixer-stylus": "0.6.x",
+    "axis": "0.3.x",
     "backbone": "1.x",
     "backbone.marionette": "2.x",
     "client-templates": "0.2.x",
@@ -25,6 +25,6 @@
     "marked": "0.3.x",
     "roots-browserify": "0.3.x",
     "rupture": "0.6.x",
-    "stylus": "0.50.x"
+    "stylus": "0.51.x"
   }
 }
