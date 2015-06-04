@@ -5,6 +5,7 @@
 ### Installation
 
 - `npm install roots -g`
+- `npm install`
 - `roots watch`
 
 ### Acknowledgements
