@@ -15,7 +15,7 @@ A template for roots v3 configured with marionette
 - **description** (a short description of the template)
 - **models** (optional, space-separated list of models to generate templates for)
 
-### Amazing links
+### Marionette Resources
 
 - [Marionette Docs](http://marionettejs.com/docs/current)
 - [Marionette Chat](https://gitter.im/marionettejs/backbone.marionette)
