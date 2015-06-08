@@ -17,5 +17,8 @@ module.exports =
   stylus:
     use: [axis(), autoprefixer(), rupture()]
 
+  'coffee-script':
+    sourcemap: true
+
   server:
     spa: true
